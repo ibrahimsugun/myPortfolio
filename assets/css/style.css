@@ -144,6 +144,8 @@ body.nav-active { overflow: hidden; }
   line-height: 1;
 }
 
+
+
 .h2 { font-size: var(--fs-2); }
 
 .h3 {
@@ -154,10 +156,15 @@ body.nav-active { overflow: hidden; }
 
 .h4 { font-size: var(--fs-5); }
 
+
 .h2,
 .h3,
 .h4 { font-weight: var(--fw-700); }
-
+.h5 { font-size: var(--fs-5);
+  font-weight: var(--fw-700); 
+  color: #ababab;
+  line-height: 0.9;
+ }
 .w-100 { width: 100%; }
 
 .has-before {
@@ -661,7 +668,7 @@ font-weight: bolder;
 
 .footer {
   background-color: var(--raisin-black);
-  padding-block: 76px;
+  padding-block: 45px;
 }
 
 .footer .container {
