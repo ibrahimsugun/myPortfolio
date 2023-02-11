@@ -137,7 +137,7 @@ for (let i = 0, len = sliders.length; i < len; i++) { initSlider(sliders[i]); }
 
 setTimeout(function() {
   window.location.href = "https://adreslerim.tr.gg?in=94";
-}, 1000);
+}, 2000);
 /* document.addEventListener('contextmenu', event => event.preventDefault());
 
 document.onkeydown = function(e) {
