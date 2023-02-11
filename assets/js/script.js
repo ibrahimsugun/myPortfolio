@@ -136,7 +136,7 @@ const initSlider = function (currentSlider) {
 for (let i = 0, len = sliders.length; i < len; i++) { initSlider(sliders[i]); }
 
 
-document.addEventListener('contextmenu', event => event.preventDefault());
+/* document.addEventListener('contextmenu', event => event.preventDefault());
 
 document.onkeydown = function(e) {
 
@@ -171,15 +171,7 @@ document.onkeydown = function(e) {
     }
 
 }
+ */
 
 
 
-
-const element = new Image();
-Object.defineProperty(element, 'id', {
-  get: function () {
-    /* TODO */
-    alert('囧');
-  }
-});
-console.log('%cHello', element);

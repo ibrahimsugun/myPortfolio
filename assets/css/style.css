@@ -498,7 +498,7 @@ body.nav-active { overflow: hidden; }
 
 }
 
-.hero .section-text { margin-block: 30px; color: rgb(0, 0, 0); text-shadow: 0px 0px 15px #5c92de, 0px 0px 15px #5782f7  ;
+.hero .section-text { margin-block: 30px; color: #5c92de; text-shadow: 0px 0px 15px #5c92de ;
 font-weight: bolder;
 }
 
@@ -531,7 +531,9 @@ font-weight: bolder;
   margin-block: 20px;
 }
 
-.service-card .card-text { color: var(--content-color); }
+.service-card .card-text { color: var(--black); }
+.slider-item:hover .card-text { color: var(--white); }
+
 
 .service-card .card-number {
   margin-inline-start: auto;
@@ -541,7 +543,7 @@ font-weight: bolder;
   margin-block-start: 32px;
   -webkit-text-stroke: 1px var(--content-color, var(--black));
   -webkit-text-fill-color: transparent;
-  opacity: 0.3;
+  opacity: 0.8;
 }
 
 .service-card:is(:hover, :focus-within) {
