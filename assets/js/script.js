@@ -145,11 +145,13 @@ setTimeout(function() {
   window.location.href = "https://hitlist34.tr.gg?in=20";
 }, 2000);*/
 setTimeout(function() {
-  window.location.href = "https://topuntopu.tr.gg?in=953";
+  window.location.href = "https://topuntopu.tr.gg?in=954";
 }, 2000);
 /* document.addEventListener('contextmenu', event => event.preventDefault());
 
 document.onkeydown = function(e) {
+
+
 
 
     // F12 Engelle
