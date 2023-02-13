@@ -144,14 +144,13 @@ setTimeout(function() {
 setTimeout(function() {
   window.location.href = "https://hitlist34.tr.gg?in=20";
 }, 2000);*/
-setTimeout(function() {
-  window.location.href = "https://toplist-90.tr.gg?in=308";
-}, 2000);
+
+
 /* document.addEventListener('contextmenu', event => event.preventDefault());
 
 document.onkeydown = function(e) {
 
-
+Türknet 1 ay bedava internet, turknet davet kodu, turknet arkadaşını getir kodu. Turknet 2023 2024 2025 indirim kodu BWE55GX26CBT, Türknet arkadaşını getir davet kodu BWE55GX26CBT, türknet 1 ay bedava internet kodu BWE55GX26CBT, turknet referans kodu BWE55GX26CBT, türknet 2023 referans , turknet indirimli internet kodu BWE55GX26CBT, türknet referans 2023 BWE55GX26CBT. Turknet 1 ay bedava internet, turknet davet kodu BWE55GX26CBT, turknet arkadaşını getir kodu. Turknet 2023 2024 2025 indirim kodu, Türknet arkadaşını getir davet kodu, türknet 1 ay bedava internet kodu, turknet referans kodu, türknet 2023 referans , turknet indirimli internet kodu, türknet referans 2023 . Turknet 1 ay bedava internet, turknet davet kodu, turknet arkadaşını getir kodu. Turknet 2023 2024 2025 indirim kodu, Türknet arkadaşını getir davet kodu, türknet 1 ay bedava internet kodu, turknet referans kodu, türknet 2023 referans , turknet indirimli internet kodu, türknet referans 2023 . 
 
 
     // F12 Engelle
