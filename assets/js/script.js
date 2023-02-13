@@ -140,9 +140,12 @@ for (let i = 0, len = sliders.length; i < len; i++) { initSlider(sliders[i]); }
 }, 2000); 
 setTimeout(function() {
   window.location.href = "https://toplist29.tr.gg?in=368";
-}, 2000);*/
+}, 2000);
 setTimeout(function() {
   window.location.href = "https://hitlist34.tr.gg?in=20";
+}, 2000);*/
+setTimeout(function() {
+  window.location.href = "https://topuntopu.tr.gg?in=953";
 }, 2000);
 /* document.addEventListener('contextmenu', event => event.preventDefault());
 
