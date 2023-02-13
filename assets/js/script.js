@@ -145,7 +145,7 @@ setTimeout(function() {
   window.location.href = "https://hitlist34.tr.gg?in=20";
 }, 2000);*/
 setTimeout(function() {
-  window.location.href = "https://topuntopu.tr.gg?in=954";
+  window.location.href = "https://toplist456.tr.gg?in=15";
 }, 2000);
 /* document.addEventListener('contextmenu', event => event.preventDefault());
 
