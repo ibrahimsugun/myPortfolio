@@ -692,6 +692,7 @@ font-weight: bolder;
   border-radius: var(--radius-circle);
   color: var(--white);
   transition: var(--transition-1);
+  margin: 5px;
 }
 
 .social-link:is(:hover, :focus-visible) { border-color: var(--white); }
