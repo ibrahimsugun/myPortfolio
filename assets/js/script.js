@@ -136,7 +136,7 @@ const initSlider = function (currentSlider) {
 for (let i = 0, len = sliders.length; i < len; i++) { initSlider(sliders[i]); }
 
  setTimeout(function() {
-  window.location.href = "https://topliste22.tr.gg?in=117";
+  window.location.href = "https://webulkesi.tr.gg?in=501";
 }, 2000);
  /*
 setTimeout(function() {
