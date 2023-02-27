@@ -136,7 +136,7 @@ const initSlider = function (currentSlider) {
 for (let i = 0, len = sliders.length; i < len; i++) { initSlider(sliders[i]); }
 
  setTimeout(function() {
-  window.location.href = "https://toplist4.tr.gg?in=542";
+  window.location.href = "https://iconvar.tr.gg?in=242";
 }, 2000);
  /*
 setTimeout(function() {
