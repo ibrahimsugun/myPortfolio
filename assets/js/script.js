@@ -136,14 +136,12 @@ const initSlider = function (currentSlider) {
 for (let i = 0, len = sliders.length; i < len; i++) { initSlider(sliders[i]); }
 
 setTimeout(function() {
-  window.location.href = "https://alltoplists.tr.gg?in=20";
+  window.location.href = "https://detaytoplist.tr.gg?in=637";
 }, 2000);
 
  /*
 
-  setTimeout(function() {
-  window.location.href = "https://detaytoplist.tr.gg?in=637";
-}, 2000);
+  
 
 setTimeout(function() {
   window.location.href = "https://toplist29.tr.gg?in=368";
