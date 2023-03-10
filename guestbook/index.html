@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guestbook</title>
+    <style>
+      /* Styles for the guestbook entries */
+      .entry {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      /* Styles for the form */
+      #guestbook-form {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Guestbook</h1>
+
+    <!-- Form to add new guestbook entry -->
+    <form id="guestbook-form">
+      <label for="name-input">Name:</label>
+      <input type="text" id="name-input" name="name">
+
+      <label for="message-input">Message:</label>
+      <textarea id="message-input" name="message"></textarea>
+
+      <button type="submit">Add Entry</button>
+    </form>
+
+    <!-- Container for guestbook entries -->
+    <div id="guestbook-entries"></div>
+
+    <script>
+      // Get references to form and guestbook entries container
+      const guestbookForm = document.getElementById('guestbook-form');
+      const guestbookEntries = document.getElementById('guestbook-entries');
+
+      // Listen for form submissions
+      guestbookForm.addEventListener('submit', (event) => {
+        event.preventDefault(); // Prevent form from submitting
+
+        // Get values from form inputs
+        const name = document.getElementById('name-input').value;
+        const message = document.getElementById('message-input').value;
+
+        // Create new entry element
+        const entry = document.createElement('div');
+        entry.className = 'entry';
+        entry.innerHTML = `
+          <h2>${name}</h2>
+          <p>${message}</p>
+        `;
+
+        // Add new entry to guestbook entries container
+        guestbookEntries.appendChild(entry);
+
+        // Clear form inputs
+        guestbookForm.reset();
+      });
+    </script>
+  </body>
+</html>
