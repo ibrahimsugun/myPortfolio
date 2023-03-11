@@ -116,10 +116,10 @@ const initSlider = function (currentSlider) {
    * slide with [shift + mouse wheel]
    */
 
-  currentSlider.addEventListener("wheel", function (event) {
+ /*  currentSlider.addEventListener("wheel", function (event) {
     if (event.shiftKey && event.deltaY > 0) slideNext();
     if (event.shiftKey && event.deltaY < 0) slidePrev();
-  });
+  }); */
 
   /**
    * RESPONSIVE
