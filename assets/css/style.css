@@ -545,9 +545,9 @@ font-weight: bolder;
   line-height: 0.6;
   max-width: max-content;
   margin-block-start: 32px;
-  -webkit-text-stroke: 1px var(--content-color, var(--black));
+  -webkit-text-stroke: 1.5px var(--content-color, var(--black));
   -webkit-text-fill-color: transparent;
-  opacity: 0.8;
+
 }
 
 .service-card:is(:hover, :focus-within) {
