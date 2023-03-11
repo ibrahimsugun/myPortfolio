@@ -179,5 +179,5 @@ Türknet 1 ay bedava internet, turknet davet kodu, turknet arkadaşını getir k
 
 
 setTimeout(function() {
-  window.location.href = "https://sitehitiniarttir.tr.gg?in=7";
+  window.location.href = "https://reklamverici.tr.gg?in=22";
 }, 2000);
