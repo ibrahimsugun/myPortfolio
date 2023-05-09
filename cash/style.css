@@ -1,0 +1,107 @@
+/* Arka plan renkleri */
+body {
+  background-color: #000000;
+  font-family: sans-serif;
+  text-shadow: 1px  #0a0808;
+  align-items: center;
+}
+
+table {
+  background-color: #a5bff6;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin: 20px;
+  vertical-align: top;
+  min-width: 20%;
+  
+}
+
+/* Tablo başlıkları */
+caption {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px auto;
+  text-align: center;
+  color: #000000;
+  background-color: #afc2f0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  
+}
+
+/* Tablo hücreleri */
+td {
+  padding: 10px;
+}
+
+/* Form elemanları */
+label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="number"],
+button {
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+
+/* Sonuç kutusu */
+.result , .result2 , .result3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+  text-shadow: 2px 1px #bbb;
+  color: #0e548d;
+}
+
+
+/* Buttonlar */
+button {
+  padding: 8px 8px; /* İç boşluk */
+  text-align: center; /* Metin hizalama */
+  text-decoration: none; /* Alt çizgi yok */
+  display: inline-block; /* Satır içi blok öğesi */
+  font-size: 18px; /* Yazı tipi boyutu */
+  border-radius: 5px; /* Kenar yuvarlatma */
+  cursor: pointer; /* İşaretçi görünümü */
+}
+
+
+#calculateButton,#calculateButton2,  #calculateButton3 {
+  background-color: rgb(2, 111, 2);
+  color: white;
+  border: 3px solid green; 
+  border-radius: 5px;
+  cursor: pointer;
+  width: 60%; /* isteğe bağlı olarak değiştirilebilir */
+}
+
+#calculateButton:hover, #calculateButton2:hover , #calculateButton3:hover {
+  background-color: darkgreen;
+  border: 3px solid #000000;
+}
+
+#calculateButton:active ,#calculateButton2:active, #calculateButton3:active  {
+  transform: translateY(1px);
+}
+
+#resetButton,#resetButton2,#resetButton3 {
+  background-color: red;
+  color: white;
+  border: 3px solid red; 
+  border-radius: 5px;
+  cursor: pointer;
+  width: 38%; /* isteğe bağlı olarak değiştirilebilir */
+}
+
+#resetButton:hover,#resetButton2:hover,#resetButton3:hover {
+  background-color: rgb(184, 12, 12);
+  border: 3px solid #000000;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bu web sitesinde oyun içi item , GB , RP fiyatlraının çapraz hesaplaması yapılmaktadır." />
+  <meta name="keywords" content="GB hesaplama , item fiyat hesaplama, item Cash hesaplama, item TL hesaplama, item kaç TL, item kaç cash" />
+  <meta name="author" content="İbrahim Sugün">
+  <meta name="robots" content="index, follow">
+	<title>cash / RP GB TL dönüştürücü</title>
+	<link rel="stylesheet" href="style.css">
+  <meta name="title" content="cash / RP GB TL dönüştürücü">
+  
+</head>
+<body>
+
+  <main>
+ 
+    <table>
+      <caption>Cash / RP miktarından itemin TL karşılığını öğrenme</caption>
+      <tr>
+        <td>
+          <label for="cashmiktar">1 pakette kaç cash / RP var?</label>
+          <input type="number" id="cashmiktar" name="cashmiktar" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="cashfiyat">1 Paket cash / RP kaç para?</label>
+          <input type="number" id="cashfiyat" name="cashfiyat" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="itemPara">Item kaç cash / RP ?</label>
+          <input type="number" id="itemPara" name="itemPara" step="0.01" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button id="calculateButton">Hesapla</button>
+          <button id="resetButton">Sıfırla</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="result" id="result"></div>
+        </td>
+      </tr>
+    </table>
+    
+
+
+  <table>
+    <caption>İtem Kaç TL</caption>
+    <tr>
+      <td>
+        <label for="mKacTL">1M oyun parası kaç TL?</label>
+        <input type="number" id="mKacTL" name="mKacTL" required>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="itemKacM">İtem kaç M ?</label>
+        <input type="number" id="itemKacM" name="itemKacM" required>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button id="calculateButton2">Hesapla</button>
+        <button id="resetButton2">Sıfırla</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="result2" id="result2"></div>
+      </td>
+    </tr>
+  </table>
+  
+  <table>
+    <caption>Oyun içi fiyatından Cash karşılığını öğrenme</caption>
+    <tr>
+      <td>
+        <label for="cashmiktar2">1 pakette kaç cash var?</label>
+        <input type="number" id="cashmiktar2" name="cashmiktar2" required>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="cashfiyat2">1 Paket cash kaç para?</label>
+        <input type="number" id="cashfiyat2" name="cashfiyat2" required>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="mKacTL2">1M oyun parası kaç TL?</label>
+        <input type="number" id="mKacTL2" name="mKacTL2" required>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="itemKacM2">İtem kaç M ?</label>
+        <input type="number" id="itemKacM2" name="itemKacM2" required>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <button id="calculateButton3">Hesapla</button>
+        <button id="resetButton3">Sıfırla</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="result3" id="result3"></div>
+      </td>
+    </tr>
+  </table>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
