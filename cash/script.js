@@ -44,7 +44,7 @@ function hesapla() {
   // Hesaplamaları yap
   var birimItemPara = cashfiyat / cashmiktar;       //1 cash kaç TL 
 
-  var itemparaTL = birimItemPara * itemPara
+  var itemparaTL = (birimItemPara * itemPara).toFixed(2);  
  
   // Sonuçları HTML etiketlerine yazdır
   resultDiv.innerHTML = "Alacağınız item " + itemparaTL + " TL'ye geliyor."
@@ -64,7 +64,7 @@ function hesapla2() {
     }
     // Hesaplamaları yap
 
-    var itemToTL = (mToTL * itemToM) //item kaç TL
+    var itemToTL = (mToTL * itemToM).toFixed(2);   //item kaç TL
 
    
     // Sonuçları HTML etiketlerine yazdır
@@ -91,7 +91,7 @@ function hesapla3() {
   var birimItemPara = cashfiyat2 / cashmiktar2;       //1 cash kaç TL 
   var itemToTL = (mToTL2 * itemToM2)  // item kaç TL
 
-  var itemToCash = itemToTL * birimItemPara   //teim kaç cash
+  var itemToCash = (itemToTL * birimItemPara).toFixed(2);   //teim kaç cash
  
   // Sonuçları HTML etiketlerine yazdır
   resultDiv3.innerHTML = "Alacağınız item " + itemToCash + " Cash'e geliyor."
