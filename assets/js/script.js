@@ -131,7 +131,12 @@ const initSlider = function (currentSlider) {
 
     moveSliderItem();
   });
-
+  if (/Mobi/.test(navigator.userAgent)) {
+    setInterval(() => {
+      slideNext();
+    }, 5000);
+  }
+  
 }
 for (let i = 0, len = sliders.length; i < len; i++) { initSlider(sliders[i]); }
 
