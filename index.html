@@ -127,7 +127,8 @@
             </p>
 
             <div class="hero-banner">
-              <img src="./assets/images/img4.webp" alt="Ibrahim Sugün" width="800" height="800" class="w-100">
+              <img src="./assets/images/img4.webp" class="desktop-image w-100" alt="Ibrahim Sugün" width="800" height="800"  >
+              <img src="./assets/images/img3.webp" class="mobile-image w-100" alt="Ibrahim Sugün Mobile" width="400" height="400" >
             </div>
 
             <p class="section-text">
@@ -442,7 +443,25 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <style>
+    		@media (max-width: 768px) {
+		.desktop-image {
+			display: none; /* Masaüstü resimlerini gizle */
+		}
+		.mobile-image {
+			display: block; /* Mobil resimleri göster */
+		}
+	}
 
+		@media (min-width: 769px) {
+			.desktop-image {
+				display: block; /* Masaüstü resimleri göster */
+			}
+			.mobile-image {
+				display: none; /* Mobil resimleri gizle */
+			}
+		}
+  </style>
   <!-- 
     - ionicon link
   -->
