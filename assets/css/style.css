@@ -1,7 +1,7 @@
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap'); */
 :root {
 
   /**
@@ -218,14 +218,6 @@ body.nav-active { overflow: hidden; }
   font-size: var(--fs-1);
 }
 
-.layer-link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
 
 .slider {
   --slider-items: 1;
@@ -291,21 +283,6 @@ body.nav-active { overflow: hidden; }
   margin-block-start: 40px;
 }
 
-.img-holder {
-  aspect-ratio: var(--width) / var(--height);
-  background-color: var(--white_a5);
-  overflow: hidden;
-}
-
-.img-cover {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-
-
 
 /*-----------------------------------*\
   #PRELOADER
@@ -346,9 +323,6 @@ body.nav-active { overflow: hidden; }
 }
 
 .preloader.loaded .circle { opacity: 0; }
-
-
-
 
 
 /*-----------------------------------*\
@@ -447,9 +421,6 @@ body.nav-active { overflow: hidden; }
 .overlay.active { display: block; }
 
 
-
-
-
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
@@ -510,8 +481,6 @@ font-weight: bolder;
 
 
 
-
-
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
@@ -557,8 +526,6 @@ font-weight: bolder;
 
 
 
-
-
 /*-----------------------------------*\
   #SKILLS
 \*-----------------------------------*/
@@ -587,82 +554,6 @@ font-weight: bolder;
   background-color: var(--white);
   border-radius: inherit;
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #PORTFOLIO
-\*-----------------------------------*/
-
-.portfolio .slider { --item-gap: 16px; }
-
-.portfolio-card {
-  position: relative;
-  background-color: transparent;
-  transition: var(--cubic-ease-out);
-}
-
-.portfolio-card .img-cover { transition: var(--cubic-ease-out); }
-
-.portfolio-card .card-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  width: 100%;
-  transform: translate(-55%, -50%);
-  opacity: 0;
-  transition: var(--cubic-ease-out);
-  z-index: 1;
-}
-
-.portfolio-card .card-text { color: var(--white); }
-
-.portfolio-card:is(:hover, :focus-within) .img-cover {
-  opacity: 0.1;
-  transform: scale(0.95);
-}
-
-.portfolio-card:is(:hover, :focus-within) .card-content {
-  transform: translate(-50%, -50%);
-  opacity: 1;
-}
-
-
-
-
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
-
-.blog-list {
-  display: grid;
-  gap: 60px;
-}
-
-.blog-card {
-  display: grid;
-  gap: 40px;
-}
-
-.blog-card .card-content {
-  display: flex;
-  gap: 16px;
-  padding-inline: 16px;
-}
-
-.blog-card .time { font-size: var(--fs-7); }
-
-.blog-card .time .span {
-  color: var(--white);
-  font-weight: var(--fw-700);
-  line-height: 0.9;
-}
-
-.blog-card .card-text { margin-block: 20px; }
 
 
 
@@ -703,8 +594,6 @@ font-weight: bolder;
 
 
 
-
-
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -729,16 +618,6 @@ font-weight: bolder;
 
 
 
-  /**
-   * BLOG
-   */
-
-  .blog-card .card-content {
-    padding-inline: 32px;
-    gap: 32px;
-  }
-
-
 
   /**
    * FOOTER
@@ -747,7 +626,23 @@ font-weight: bolder;
   .footer-list-title { margin-block-end: 8px; }
 
 }
+@media (max-width: 768px) {
+  .desktop-image {
+    display: none; /* Masaüstü resimlerini gizle */
+  }
+  .mobile-image {
+    display: block; /* Mobil resimleri göster */
+  }
+}
 
+  @media (min-width: 769px) {
+    .desktop-image {
+      display: block; /* Masaüstü resimleri göster */
+    }
+    .mobile-image {
+      display: none; /* Mobil resimleri gizle */
+    }
+  }
 
 
 
@@ -832,11 +727,6 @@ font-weight: bolder;
 
 
 
-  /**
-   * BLOG
-   */
-
-  .blog-card .card-title { --fs-4: 2.7rem; }
 
 
 
@@ -903,26 +793,6 @@ font-weight: bolder;
   .skills-wrapper { gap: 10%; }
 
 
-
-  /**
-   * BLOG
-   */
-
-  .blog-card {
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-  }
-
-  .blog-card .card-content { padding: 32px; }
-
-  .blog-list li:nth-child(2n) .card-banner { order: 1; }
-
-}
-
-
-
-
-
 /**
  * responsive for large than 1200px screen
  */
@@ -981,4 +851,4 @@ font-weight: bolder;
 
   .hero .section-text { margin-block-end: 52px; }
 
-}
+}}
