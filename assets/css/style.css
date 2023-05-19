@@ -322,7 +322,7 @@ body.nav-active { overflow: hidden; }
   display: grid;
   place-items: center;
   transition: var(--transition-2);
-  transition-delay: 0.30s;
+  transition-delay: 0.25s;
 }
 
 .preloader.loaded {
