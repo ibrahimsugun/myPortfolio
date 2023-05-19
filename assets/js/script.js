@@ -112,14 +112,6 @@ const initSlider = function (currentSlider) {
     sliderPrevBtn.style.display = 'none';
   }
 
-  /**
-   * slide with [shift + mouse wheel]
-   */
-
- /*  currentSlider.addEventListener("wheel", function (event) {
-    if (event.shiftKey && event.deltaY > 0) slideNext();
-    if (event.shiftKey && event.deltaY < 0) slidePrev();
-  }); */
 
   /**
    * RESPONSIVE
@@ -143,12 +135,30 @@ for (let i = 0, len = sliders.length; i < len; i++) { initSlider(sliders[i]); }
 
 
 
-/* document.addEventListener('contextmenu', event => event.preventDefault());
+  document.addEventListener('contextmenu', event => event.preventDefault());
 
 document.onkeydown = function(e) {
 
-Türknet 1 ay bedava internet, turknet davet kodu, turknet arkadaşını getir kodu. Turknet 2023 2024 2025 indirim kodu BWE55GX26CBT, Türknet arkadaşını getir davet kodu BWE55GX26CBT, türknet 1 ay bedava internet kodu BWE55GX26CBT, turknet referans kodu BWE55GX26CBT, türknet 2023 referans , turknet indirimli internet kodu BWE55GX26CBT, türknet referans 2023 BWE55GX26CBT. Turknet 1 ay bedava internet, turknet davet kodu BWE55GX26CBT, turknet arkadaşını getir kodu. Turknet 2023 2024 2025 indirim kodu, Türknet arkadaşını getir davet kodu, türknet 1 ay bedava internet kodu, turknet referans kodu, türknet 2023 referans , turknet indirimli internet kodu, türknet referans 2023 . Turknet 1 ay bedava internet, turknet davet kodu, turknet arkadaşını getir kodu. Turknet 2023 2024 2025 indirim kodu, Türknet arkadaşını getir davet kodu, türknet 1 ay bedava internet kodu, turknet referans kodu, türknet 2023 referans , turknet indirimli internet kodu, türknet referans 2023 . 
+  document.addEventListener("DOMContentLoaded", function() {
+    var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
 
+    if ("IntersectionObserver" in window) {
+      let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            let lazyImage = entry.target;
+            lazyImage.src = lazyImage.dataset.src;
+            lazyImage.classList.remove("lazy");
+            lazyImageObserver.unobserve(lazyImage);
+          }
+        });
+      });
+
+      lazyImages.forEach(function(lazyImage) {
+        lazyImageObserver.observe(lazyImage);
+      });
+    }
+  });
 
     // F12 Engelle
     if (e.keyCode == 123) {
@@ -180,10 +190,3 @@ Türknet 1 ay bedava internet, turknet davet kodu, turknet arkadaşını getir k
     }
 
 }
- */
-
-/* 
-setTimeout(function() {
-  window.location.href = "https://reklamverici.tr.gg?in=22";
-}, 2000);
- */
