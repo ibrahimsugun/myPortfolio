@@ -134,17 +134,16 @@ for (let i = 0, len = sliders.length; i < len; i++) { initSlider(sliders[i]); }
 
 
 
-
-  document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('contextmenu', event => event.preventDefault());
 
 document.onkeydown = function(e) {
 
 
 
-    // F12 Engelle
+  // F12 Engelle
     if (e.keyCode == 123) {
           return false;
-    }
+    } 
 
     // CTRL+I Engelle
     if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {

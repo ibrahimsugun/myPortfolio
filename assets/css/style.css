@@ -553,8 +553,24 @@ font-weight: bolder;
   height: inherit;
   background-color: var(--white);
   border-radius: inherit;
+  width: 0;
+
+
+}
+.progress:hover{
+  animation: progress 0.5s ease-in-out forwards;
+  opacity: 0;
 }
 
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 
 
