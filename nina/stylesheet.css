@@ -1056,7 +1056,7 @@ audio {
 	100% {
 		-ms-transform:translate(0px,0px);
 	}
-}o
+}
 @keyframes bannar_come {
 	0%{
 		transform:translate(0px,-1000px);
@@ -1118,13 +1118,13 @@ audio {
 	-webkit-animation: balloons_rotate_one linear 10s infinite;
 	-webkit-transform: rotate(30deg);
 	-moz-animation: balloons_rotate_one linear 10s infinite;
-	-moz-transform: rotate(30deg);
+	-moz-transform: rotate(32deg);
 	-o-animation: balloons_rotate_one linear 10s infinite;
 	-o-transform: rotate(30deg);
 	-ms-animation: balloons_rotate_one linear 10s infinite;
-	-ms-transform: rotate(30deg);
+	-ms-transform: rotate(32deg);
 	animation: balloons_rotate_one linear 10s infinite;
-	transform: rotate(30deg);
+	transform: rotate(29deg);
 }
 @-webkit-keyframes balloons_rotate_one {
 	0% {
