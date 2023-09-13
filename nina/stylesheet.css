@@ -1085,13 +1085,12 @@ audio {
 	background-repeat: no-repeat no-repeat;
 	background-size: 100px 183px;
 }
-.balloons h2 {
-	text-transform: uppercase;
+.balloons h4 {
 	font-family: 'Signika', sans-serif;
-	font-size: 50px;
-	color: #BF4136;
+	font-size: 22px;
+	margin-top: 45px;
 	text-shadow: 5px 5px 5px #FFF;
-	display: none;
+	
 }
 #b1,#b11 {
 	background-image: url('b1.png');
