@@ -436,7 +436,20 @@
     </div>
   </footer>
 
-
+<script>
+  // Kullanıcının IP adresini almak için bir HTTP isteği yapın
+fetch('https://api.ipify.org?format=json')
+  .then(response => response.json())
+  .then(data => {
+    const ipAddress = data.ip;
+    // IP adresini kullanabilir veya gönderebilirsiniz
+    console.log('Kullanıcının IP adresi: ' + ipAddress);
+    // Burada e-posta göndermek yerine, kullanıcıya izin isteyen bir iletişim formu veya bildirim gösterebilirsiniz.
+  })
+  .catch(error => {
+    console.error('IP adresi alınamadı: ' + error);
+  });
+</script>
 
 
 
@@ -451,7 +464,19 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+<!-- Default Statcounter code for portfolie https://ibrahimsugun.com.tr -->
+<script type="text/javascript">
+  var sc_project=12922687; 
+  var sc_invisible=1; 
+  var sc_security="36e5a966"; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics"
+  href="https://statcounter.com/" target="_blank"><img class="statcounter"
+  src="https://c.statcounter.com/12922687/0/36e5a966/1/" alt="Web Analytics"
+  referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+  <!-- End of Statcounter Code -->
 </body>
 
 </html>
