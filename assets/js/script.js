@@ -132,9 +132,29 @@ const initSlider = function (currentSlider) {
 }
 for (let i = 0, len = sliders.length; i < len; i++) { initSlider(sliders[i]); }
 
+function sagtus() { //sağ tık engelle
+  if (event.button == 2) {
+    var mesajlar = [
+      "No right clicks :)",
+      "Don't do again.",
+      "What are you looking for?",
+      "Right-clicking won't work here.",
+      "Sorry, no right-clicking allowed.",
+      "This is a no right-click zone.",
+      "Please refrain from right-clicking."
+    ];
 
+    var randomIndex = Math.floor(Math.random() * mesajlar.length);
+    var randomMesaj = mesajlar[randomIndex];
+    
+    alert(randomMesaj);
+    return false;
+  }
+}
+document.onmousedown=sagtus;
 
-document.addEventListener('contextmenu', event => event.preventDefault());
+/* document.addEventListener('contextmenu', event => event.preventDefault()); sağ tık engelle
+ */
 
 document.onkeydown = function(e) {
 
