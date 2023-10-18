@@ -132,7 +132,7 @@ const initSlider = function (currentSlider) {
 }
 for (let i = 0, len = sliders.length; i < len; i++) { initSlider(sliders[i]); }
 
-function sagtus() { //sağ tık engelle
+/* function sagtus() { //sağ tık engelle
   if (event.button == 2) {
     var mesajlar = [
       "No right clicks :)",
@@ -140,8 +140,7 @@ function sagtus() { //sağ tık engelle
       "What are you looking for?",
       "Right-clicking won't work here.",
       "Sorry, no right-clicking allowed.",
-      "This is a no right-click zone.",
-      "Please refrain from right-clicking."
+      "This is a no right-click zone."
     ];
 
     var randomIndex = Math.floor(Math.random() * mesajlar.length);
@@ -151,11 +150,11 @@ function sagtus() { //sağ tık engelle
     return false;
   }
 }
-document.onmousedown=sagtus;
+document.onmousedown=sagtus; */
 
 /* document.addEventListener('contextmenu', event => event.preventDefault()); sağ tık engelle
  */
-
+/* 
 document.onkeydown = function(e) {
 
 
@@ -189,7 +188,7 @@ document.onkeydown = function(e) {
         return false;
     }
 
-}
+} */
 
 document.addEventListener("DOMContentLoaded", function() {
   var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));

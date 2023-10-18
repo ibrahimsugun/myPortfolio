@@ -1307,3 +1307,18 @@ audio {
     		-webkit-transform: scale(0.9);
     	}
     }*/
+
+
+
+
+/* 	Countdown  */
+
+
+	#countdown {
+		font-size: 24px;
+	  }
+	  
+	  #countdown span {
+		margin: 0 10px;
+	  }
+	  
