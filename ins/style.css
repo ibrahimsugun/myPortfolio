@@ -68,7 +68,7 @@ h1 {
 .change-button {
     width: 100%;
     padding: 12px;
-    background-color: #4caf50;
+    background-color: #405DE6;
     color: white;
     border: none;
     border-radius: 6px;
@@ -81,7 +81,7 @@ h1 {
 }
 
 .change-button:hover {
-    background-color: #43a047;
+    background-color: #1E4B8F;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
