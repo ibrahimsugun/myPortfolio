@@ -1,4 +1,5 @@
 # robots.txt Ibrahim Sugün tarafından oluşturuldu
 User-agent: *
 Disallow: 
+
 Sitemap: https://ibrahimsugun.com.tr/sitemap.xml
